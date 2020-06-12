@@ -17,7 +17,7 @@ public class Main {
 
 class Chessboard {
 
-    KnightSquare[][] board = new KnightSquare[8][8]; //create a chessboard
+    KnightSquare[][] board = new KnightSquare[8][8]; //create a standard chessboard
     public int START = -1; //starting status
     public int BEFORE = 0; //hasn't been tried
     public int TEMP = 99; //currently trying
@@ -46,13 +46,13 @@ class Chessboard {
         }
         n++; //increment path number
         board[x][y].status = TEMP; //set square status to trying
-        board[x][y].visit = n; //give this board a number
-        if(board[x][y].status == START || n == 63){ //if it's back to the starting square or it reached the end of the path
+        board[x][y].visit = n; //give this square a number
+        if((board[x][y].status == START && n != 1) || n == 64){ //if it's back to the starting square or it reached the end of the path
             found = true; //we've found a solution
             board[x][y].visit = n; //give this square a number on the path
             board[x][y].status = AFTER; //set square status to done
             return found;
-        }else{ //otherwise if we aren't at the end
+        } else { //otherwise if we aren't at the end
             for(int q = 0; q < 8; q++){ //try the max 8 possibilities from this square
                 if(board[x][y].possibilities[q] != null){ //if there is a possibility
                     i = board[x][y].possibilities[q].x;
