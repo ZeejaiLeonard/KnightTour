@@ -29,25 +29,20 @@ class Chessboard {
                 board[i][j] = new KnightSquare(i, j); //populate chessboard with squares
             }
         }
-        board[0][0].status = START; //set the top left as the starting square
+        board[1][1].status = START; //set starting square
     }
 
     public boolean solve(){
-        return solve(0, 0, 0);
+        return solve(1, 1, 0);
     } //initial call
 
     public boolean solve(int x, int y, int n){ //recursive solution
         boolean found = false;
         int i;
         int j;
-        if(board[x][y].status == TEMP || board[x][y].status == AFTER){ //if this square has already been tried or assigned
-            board[x][y].visit = n;
-            return found; //then this obviously isn't the way to go
-        }
         n++; //increment path number
         board[x][y].status = TEMP; //set square status to trying
-        board[x][y].visit = n; //give this square a number
-        if((board[x][y].status == START && n != 1) || n == 64){ //if it's back to the starting square or it reached the end of the path
+        if(n == 64){ //if it's back to the starting square or it reached the end of the path
             found = true; //we've found a solution
             board[x][y].visit = n; //give this square a number on the path
             board[x][y].status = AFTER; //set square status to done
@@ -66,19 +61,19 @@ class Chessboard {
                         }
                     }
                 }
-
             }
         }
+        board[x][y].status = BEFORE; //this square didn't work for this path, check it again later
         return found; //all the possibilities didn't work, backtrack
     }
 
     public void printBoard(){ //print the chessboard with path
         for(int i = 0; i < 8; i++){
             for(int j = 0; j < 8; j++){
-                if(this.board[i][j].visit < 10){
+                if(board[i][j].visit < 10){
                     System.out.print(" ");
                 }
-                System.out.print(this.board[i][j].visit);
+                System.out.print(board[i][j].visit);
                 System.out.print(" ");
             }
             System.out.println();

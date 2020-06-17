@@ -103,7 +103,7 @@ public:
                 board[i][j] = KnightSquare(i, j); //populate chessboard with squares
             }
         }
-        board[0][0].status = START; //set the top left as the starting square
+        board[1][1].status = START; //set starting square
     }
 
     void printBoard() { //print the chessboard with path
@@ -123,17 +123,13 @@ public:
         bool found = false; 
         int i; 
         int j; 
-        if (board[x][y].status == TEMP) { //if this square has already been tried or assigned
-            board[x][y].visit = n; 
-            return found; //then this obviously isn't the way to go
-        }
         n++; //increment path number
         board[x][y].status = TEMP; //set square status to trying
-        board[x][y].visit = n; //give this square a number
-        if ((board[x][y].p.x == 0 && board[x][y].p.y == 0 && n != 1) || n == 64) { //if it's back to the starting square or it reached the end of the path
+        if (n == 64) { //if it's back to the starting square or it reached the end of the path
             found = true; //we've found a solution
+            board[x][y].visit = n; // give this square a number on the path
             board[x][y].status = AFTER; //set square status to done
-            return found; 
+            return found; //then this obviously isn't the way to go
         } else { //otherwise if we aren't at the end
             for (int q = 0; q < 8; q++) { //try the max 8 possibilities from this square
                 if (board[x][y].possibilities[q].x != -1 && board[x][y].possibilities[q].y != -1) { //if there is a possibility
@@ -151,11 +147,12 @@ public:
                 
             }
         }
+        board[x][y].status = BEFORE; //this square didn't work for this path, check it again later
         return found; //all the possibilities didn't work, backtrack
     }
 
     bool solve() {
-        return solve(0, 0, 0); //initial call
+        return solve(1, 1, 0); //initial call
     }
 
 };
