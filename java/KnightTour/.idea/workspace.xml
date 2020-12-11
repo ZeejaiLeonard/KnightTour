@@ -29,7 +29,7 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.njit.knighttour.Main" />
       <module name="KnightTour" />
       <extension name="coverage">
@@ -57,7 +57,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Other" />
       </list>
     </recent_temporary>
@@ -76,29 +75,45 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="724" height="232" key="GridCell.Tab.0.bottom" timestamp="1592434447850">
+    <state x="447" y="135" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592436152148">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="724" height="232" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592434447850" />
-    <state width="724" height="232" key="GridCell.Tab.0.center" timestamp="1592434447850">
+    <state x="447" y="135" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1592436152148" />
+    <state x="340" y="157" key="FileChooserDialogImpl" timestamp="1592435481484">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="724" height="232" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592434447850" />
-    <state width="724" height="232" key="GridCell.Tab.0.left" timestamp="1592434447850">
+    <state x="340" y="157" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1592435481484" />
+    <state width="678" height="232" key="GridCell.Tab.0.bottom" timestamp="1592436752863">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="724" height="232" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592434447850" />
-    <state width="724" height="232" key="GridCell.Tab.0.right" timestamp="1592434447850">
+    <state width="678" height="232" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592436752863" />
+    <state width="678" height="232" key="GridCell.Tab.0.center" timestamp="1592436752863">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="724" height="232" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592434447850" />
+    <state width="678" height="232" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592436752863" />
+    <state width="678" height="232" key="GridCell.Tab.0.left" timestamp="1592436752863">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="678" height="232" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592436752863" />
+    <state width="678" height="232" key="GridCell.Tab.0.right" timestamp="1592436752863">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="678" height="232" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592436752863" />
     <state x="0" y="55" key="SettingsEditor" timestamp="1591997145960">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="0" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1591997145960" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1592434017864">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1592435359774">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1592434017864" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1592435359774" />
+    <state x="7" y="66" key="new project wizard" timestamp="1592436359988">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="7" y="66" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1592436359988" />
+    <state x="249" y="189" key="run.anything.popup" timestamp="1592874564345">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="189" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1592874564345" />
   </component>
 </project>
